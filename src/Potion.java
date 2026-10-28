@@ -3,6 +3,10 @@ public class Potion {
     private int healamount = 0;
 
     //constructor
+    public Potion(){
+
+    }
+    
     public Potion(int count,int healamount){
         this.count = count;
         this.healamount = healamount;

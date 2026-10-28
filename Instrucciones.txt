@@ -6,7 +6,7 @@ Monstruo 2: El Esqueleto
 Monstruo 3: El Leviatán
     Este sujeto tiene 80 de vida y quita 30 de vida por cada golpe
 
-Tu heroe tiene 3 pociones normales que curan 20 de vida cada una y 1 super pocion que cura 50.
+Tu heroe tiene 2 pociones normales que curan 20 de vida cada una y 1 super pocion que cura 50.
 Puedes elegir entre 2 armas, espada larga, que quita 30 de vida y espada corta que quita 15 de vida
 
 Buena Suerte.
