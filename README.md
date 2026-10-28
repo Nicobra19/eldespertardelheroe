@@ -2,7 +2,7 @@
 
 Descargarse la carpeta y correr maingame.java
 
---I made this project, everything coded by me, ai has written a single line of code :3--
+--I made this project, everything coded by me, ai hasnt written a single line of code :3--
 
 Download folder and run maingame.java
 
