@@ -4,6 +4,11 @@ public class characters {
     private int damage = 0;
 
     //constructor
+    public characters(){
+
+    }
+    
+    
     public characters(String name, int health,int damage){
         this.name = name;
         this.health = health;
