@@ -1,15 +1,15 @@
-public class characters {
+public class Character {
     private String name = "Character";
     private int health = 0;
     private int damage = 0;
 
     //constructor
-    public characters(){
+    public Character(){
 
     }
     
     
-    public characters(String name, int health,int damage){
+    public Character(String name, int health,int damage){
         this.name = name;
         this.health = health;
         this.damage = damage;

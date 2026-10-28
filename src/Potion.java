@@ -1,9 +1,9 @@
-public class potions {
+public class Potion {
     private int count = 0;
     private int healamount = 0;
 
     //constructor
-    public potions(int count,int healamount){
+    public Potion(int count,int healamount){
         this.count = count;
         this.healamount = healamount;
         

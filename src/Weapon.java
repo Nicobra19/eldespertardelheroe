@@ -1,9 +1,13 @@
-public class weapons {
+public class Weapon {
     
-    private int damageamount = 0;
+    public int damageamount = 0;
     //what else do i put here its only damage rahh
     
-    public weapons(int damageamount){
+    public Weapon(){
+
+    }
+
+    public Weapon(int damageamount){
         this.damageamount = damageamount;
     }
 
