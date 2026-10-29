@@ -6,4 +6,24 @@ public class SuperPotion extends Potion{
 
     }
 
+    @Override
+    public int getCount() {
+        // TODO Auto-generated method stub
+        return super.getCount();
+    }
+
+    @Override
+    public int getHealamount() {
+        // TODO Auto-generated method stub
+        return super.getHealamount();
+    }
+
+    @Override
+    public void setCount(int count) {
+        // TODO Auto-generated method stub
+        super.setCount(count);
+    }
+
+    
+
 }
