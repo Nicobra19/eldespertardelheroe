@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainGame {
+public class maingame {
     public static void main (String[] args) throws InterruptedException{
         Scanner sc = new Scanner(System.in);
         System.out.println("EL DESPERTAR DEL HEROE");
