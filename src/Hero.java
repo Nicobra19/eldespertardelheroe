@@ -22,6 +22,6 @@ public class Hero extends Character{
         super.setName(name);
     }  
     
-        
+
 
 }
