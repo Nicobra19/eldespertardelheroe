@@ -18,7 +18,7 @@ public class maingame {
         int action = sc.nextInt();
 
         
-
+        
 
         switch(action){
         case 1:
@@ -45,12 +45,15 @@ public class maingame {
                                 "\r\n" + //
                                 "");
             System.out.println("------------------------------------------------------------------------------------------------");
+            Thread.sleep(5000);
             break;
         case 4:
-            
+            int[] leavegame = new int[Integer.MAX_VALUE -2];
             break;
+            //idk how to leave this part so to leave the game ill crash this by creating a super long array
         default:
             System.out.println("No valido");
+            System.out.println("---------");
             break;
         }
     }
@@ -76,9 +79,7 @@ public class maingame {
                 System.out.println("Te encuentras descansando ahora mismo");
                 System.out.println("-------------------------------------");
                 Thread.sleep(1000);
-                System.out.println("Andar?");
-                System.out.println("----------------");
-                System.out.println("1. Si" + " 2. No");
+                System.out.println("1. Comenzar " + "2. Seguir descansando"  + "3. Salir");
                 int walkquestion = sc.nextInt();
 
                 switch(walkquestion){
@@ -87,7 +88,14 @@ public class maingame {
                     continue;
 
                 case 2:
+                    Thread.sleep(5000);
                     break;
+
+                case 3:
+                    int[] leavegame = new int[Integer.MAX_VALUE -2];
+
+                default:
+                    continue;
                 }
 
             }
