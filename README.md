@@ -1,8 +1,9 @@
---He hecho este proyecto, todo hecho por mi, la ia no ha escrito ni una linea de codigo--
+--He hecho este proyecto, todo hecho por mi, la ia ha sido usada para consultar conflictos de codigo, dudas y para hacer checks de si mi codigo cumple con lo que esta escrito en el pdf--
 
 Descargarse la carpeta y correr maingame.java
 
---I made this project, everything coded by me, ai hasnt written a single line of code :3--
+--I made this project, everything coded by me, ai has been used to ask about conflicts inside the code, for questions and to check if the code fulfills the pdf--
+
 
 Download folder and run maingame.java
 

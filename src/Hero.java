@@ -13,7 +13,7 @@ public class Hero extends Character{
     @Override
     public void setHealth(int health) {
         // TODO Auto-generated method stub
-        super.setHealth(health);
+        super.setHealth(Math.min(health, 100));
     }
 
     @Override
@@ -22,6 +22,4 @@ public class Hero extends Character{
         super.setName(name);
     }  
     
-
-
 }

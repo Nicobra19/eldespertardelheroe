@@ -3,6 +3,8 @@ public class Character {
     private int health = 0;
     private int damage = 0;
 
+
+
     //constructor
     public Character(){
 
@@ -33,7 +35,12 @@ public class Character {
 
 
     public void setHealth(int health) {
-        this.health = health;
+        if (health < 0) {
+            this.health = 0;
+        } else {
+            this.health = health;
+        }
+
     }
 
 
