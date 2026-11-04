@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class maingame {
     public static void main (String[] args) throws InterruptedException{
         Scanner sc = new Scanner(System.in);
+        
         while(true){
         boolean mainmenu = true;
         while(mainmenu == true){
@@ -16,7 +17,7 @@ public class maingame {
         System.out.println("4. Salir");
         System.out.println("----------------------");
         System.out.println("Que Deseas Hacer?: ");
-        int action = sc.nextInt();
+        int action = readInt(sc);
 
         
         
@@ -40,7 +41,7 @@ public class maingame {
                                 "    Este sujeto tiene 80 de vida y quita 15 de vida por cada golpe\r\n" + //
                                 "\r\n" + //
                                 "Tu heroe tiene 2 pociones normales que curan 25 de vida cada una y 1 super pocion que cura 50.\r\n" + //
-                                "Puedes elegir entre 2 armas, espada larga, que quita de 10 a 20 de vida y espada corta que quita 5 a 10 de vida\r\n" + //
+                                "Puedes elegir entre 2 armas, espada larga, que quita de 15 a 25 de vida y espada corta que quita 10 a 15 de vida\r\n" + //
                                 "\r\n" + //
                                 "Buena Suerte.\r\n" + //
                                 "\r\n" + //
@@ -49,9 +50,7 @@ public class maingame {
             Thread.sleep(5000);
             break;
         case 4:
-            int[] leavegame = new int[Integer.MAX_VALUE -2];
-            break;
-            //idk how to leave this part so to leave the game ill crash this by creating a super long array
+            return;
         default:
             System.out.println("No valido");
             System.out.println("---------");
@@ -59,8 +58,9 @@ public class maingame {
         }
     }
         boolean game = true;
-        int shortdamage = (int) (Math.random() * 6) + 5;
-        int longdamage = (int) (Math.random() * 11) + 10;
+        int shortdamage = (int) (Math.random() * 6) + 10;
+        int longdamage = (int) (Math.random() * 11) + 15;
+        int puntos = 0;
 
         System.out.println("----------------------");
         System.out.println("Escribe tu nombre: ");
@@ -69,11 +69,11 @@ public class maingame {
         Hero hero = new Hero(name, 100, 5);
         LongSword longsword = new LongSword(longdamage);
         ShortSword shortsword = new ShortSword(shortdamage);
-        Goblin goblin = new Goblin("El Goblin", 60, 10);
+        Goblin goblin = new Goblin("El Goblin", 40, 10);
         SuperPotion superPotion = new SuperPotion( 1,50);
         NormalPotion normalPotion = new NormalPotion(2, 25);
-        Skeleton skeleton = new Skeleton("El Rey Esqueleto", 90, 20);
-        Leviathan leviathan = new Leviathan("El Leviatán", 150, 15);
+        Skeleton skeleton = new Skeleton("El Rey Esqueleto", 60, 25);
+        Leviathan leviathan = new Leviathan("El Leviatán", 80, 18);
         do {
 
             boolean resting = true;
@@ -83,7 +83,7 @@ public class maingame {
                 System.out.println("-------------------------------------");
                 Thread.sleep(1000);
                 System.out.println("1. Comenzar " + "2. Seguir descansando"  + " 3. Salir");
-                int walkquestion = sc.nextInt();
+                int walkquestion = readInt(sc);
 
                 switch(walkquestion){
                 case 1:
@@ -95,7 +95,7 @@ public class maingame {
                     break;
 
                 case 3:
-                    int[] leavegame = new int[Integer.MAX_VALUE -2];
+                    return;
 
                 default:
                     System.out.println("---------");
@@ -128,14 +128,14 @@ public class maingame {
                         System.out.println("2. Curarse");
                         System.out.println("3. Ver Stats");
 
-                        int battledecision = sc.nextInt();
+                        int battledecision = readInt(sc);
                         switch (battledecision){
                         case 1:
                             System.out.println("----------------------");
                             System.out.println("Con que espada?");
                             System.out.println("------------------------------------");
                             System.out.println("1. Espada Larga" + " 2. Espada Corta");
-                            int espadadecision = sc.nextInt();
+                            int espadadecision = readInt(sc);
                             if(espadadecision == 1){
                                 hero.setDamage(longsword.getDamageamount());
                                 goblin.setHealth(goblin.getHealth() - hero.getDamage());
@@ -158,8 +158,10 @@ public class maingame {
                             }
 
                             if(goblin.getHealth() <= 0){
+                                puntos = puntos + 100;
                                 goblinfight = false;
                                 battlemenu = false;
+                                
                             }else{
                                 System.out.println("-----------------------------------------");
                                 System.out.println("El Goblin te golpea y te quita 10 de vida");
@@ -173,7 +175,7 @@ public class maingame {
                                 System.out.println("Has Muerto");
                                 System.out.println("Saliendo del juego en 5s");
                                 Thread.sleep(5000);
-                                int[] leavegame = new int [Integer.MAX_VALUE -2];
+                                return;
                             }else{
                             System.out.println("--------------------------------------------------");
                             System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
@@ -183,7 +185,7 @@ public class maingame {
                             System.out.println("Que pocion quieres usar?");
                             System.out.println("-------------------------------------");
                             System.out.println("1. Super pocion" + " 2. Pocion Normal");
-                            int pociondecision = sc.nextInt();
+                            int pociondecision = readInt(sc);
 
                             if (pociondecision == 1){
                                 if(superPotion.getCount() > 0){
@@ -225,6 +227,7 @@ public class maingame {
                             System.out.println("DATOS DEL HEROE: "); hero.showcharacterdata();
                             System.out.println("Super Pociones: " + superPotion.getCount()); 
                             System.out.println("Pociones Normales: " + normalPotion.getCount());
+                            System.out.println("Puntos: " + puntos);
                             System.out.println("-----------------");
                             System.out.println("DATOS DEL ENEMIGO: "); goblin.showcharacterdata();
                             break;
@@ -260,13 +263,13 @@ public class maingame {
                         System.out.println("2. Curarse");
                         System.out.println("3. Ver Stats");
 
-                        int battledecision = sc.nextInt();
+                        int battledecision = readInt(sc);
                         switch (battledecision){
                         case 1:
                             System.out.println("---------------");
                             System.out.println("Con que espada?");
                             System.out.println("1. Espada Larga" + " 2. Espada Corta");
-                            int espadadecision = sc.nextInt();
+                            int espadadecision = readInt(sc);
                             if(espadadecision == 1){
                                 hero.setDamage(longsword.getDamageamount());
                                 skeleton.setHealth(skeleton.getHealth() - hero.getDamage());
@@ -285,6 +288,7 @@ public class maingame {
                                 continue;
                             }
                             if(skeleton.getHealth() <= 0){
+                                puntos = puntos + 100;
                                 skeletonfight = false;
                                 battlemenu = false;
                             }else{
@@ -298,7 +302,7 @@ public class maingame {
                                 System.out.println("Has Muerto");
                                 System.out.println("Saliendo del juego en 5s");
                                 Thread.sleep(5000);
-                                int[] leavegame = new int [Integer.MAX_VALUE -2];
+                                return;
                             }else{
                             System.out.println("--------------------------------------------------");
                             System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
@@ -308,7 +312,7 @@ public class maingame {
                             System.out.println("------------------------");
                             System.out.println("Que pocion quieres usar?");
                             System.out.println("1. Super pocion" + " 2. Pocion Normal");
-                            int pociondecision = sc.nextInt();
+                            int pociondecision = readInt(sc);
 
                             if (pociondecision == 1){
                                 if(superPotion.getCount() > 0){
@@ -349,6 +353,7 @@ public class maingame {
                             System.out.println("DATOS DEL HEROE: "); hero.showcharacterdata();
                             System.out.println("Super Pociones: " + superPotion.getCount()); 
                             System.out.println("Pociones Normales: " + normalPotion.getCount());
+                            System.out.println("Puntos: " + puntos);
                             System.out.println("-----------------");
                             System.out.println("DATOS DEL ENEMIGO: "); skeleton.showcharacterdata();
                             continue;
@@ -387,13 +392,13 @@ public class maingame {
                         System.out.println("2. Curarse");
                         System.out.println("3. Ver Stats");
 
-                        int battledecision = sc.nextInt();
+                        int battledecision = readInt(sc);
                         switch (battledecision){
                         case 1:
                             System.out.println("---------------");
                             System.out.println("Con que espada?");
                             System.out.println("1. Espada Larga" + " 2. Espada Corta");
-                            int espadadecision = sc.nextInt();
+                            int espadadecision = readInt(sc);
                             if(espadadecision == 1){
                                 hero.setDamage(longsword.getDamageamount());
                                 leviathan.setHealth(leviathan.getHealth() - hero.getDamage());
@@ -413,6 +418,7 @@ public class maingame {
                             }
 
                             if(leviathan.getHealth() <= 0){
+                                puntos = puntos + 100;
                                 leviathanfight = false;
                                 battlemenu = false;
                             }else{
@@ -426,7 +432,7 @@ public class maingame {
                                 System.out.println("Has Muerto");
                                 System.out.println("Saliendo del juego en 5s");
                                 Thread.sleep(5000);
-                                int[] leavegame = new int [Integer.MAX_VALUE -2];
+                                return;
                             }else{
                             System.out.println("--------------------------------------------------");
                             System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
@@ -436,7 +442,7 @@ public class maingame {
                             System.out.println("------------------------");
                             System.out.println("Que pocion quieres usar?");
                             System.out.println("1. Super pocion" + " 2. Pocion Normal");
-                            int pociondecision = sc.nextInt();
+                            int pociondecision = readInt(sc);
 
                             if (pociondecision == 1){
                                 if(superPotion.getCount() > 0){
@@ -476,6 +482,7 @@ public class maingame {
                             System.out.println("DATOS DEL HEROE: "); hero.showcharacterdata();
                             System.out.println("Super Pociones: " + superPotion.getCount()); 
                             System.out.println("Pociones Normales: " + normalPotion.getCount());
+                            System.out.println("Puntos: " + 600);
                             System.out.println("-----------------");
                             System.out.println("DATOS DEL ENEMIGO: "); leviathan.showcharacterdata();
                             continue;
@@ -493,21 +500,22 @@ public class maingame {
             }
 
             if(goblin.getHealth() <= 0 && skeleton.getHealth() <= 0 && leviathan.getHealth() <= 0){
+                puntos = puntos + hero.getHealth();
                 System.out.println("HAS VENCIDO A TODOS TUS ENEMIGOS");
                 System.out.println("Gracias por jugar :D");
+                System.out.println("Puntuacion: " + puntos);
                 //rollout credits
                 
                 System.out.println("1. Volver al menu");
                 System.out.println("2. Salir");
-                int menufinal = sc.nextInt();
+                int menufinal = readInt(sc);
                 switch(menufinal){
                     case 1:
                         game = false;
                         mainmenu = true;
                         break;
                     case 2:
-                        int[] leavegame = new int [Integer.MAX_VALUE -2];
-                        break;
+                        return;
                 }
             }
 
@@ -515,5 +523,17 @@ public class maingame {
         } while(game == true);
 
         }
+    }
+
+    private static int readInt(Scanner sc) {
+        while (!sc.hasNextInt()) {
+            if (!sc.hasNext()) {
+                System.out.println("No hay más entrada. Saliendo del juego.");
+                System.exit(0);
+            }
+            System.out.println("Introduce un número válido.");
+            sc.next();
+        }
+        return sc.nextInt();
     }
 }
