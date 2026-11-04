@@ -8,6 +8,7 @@ public class maingame {
         while(true){
         boolean mainmenu = true;
         while(mainmenu == true){
+        System.out.println("----------------------");
         System.out.println("EL DESPERTAR DEL HEROE");
         System.out.println("----------------------");
 
@@ -32,13 +33,13 @@ public class maingame {
             break;
         case 3:
             System.out.println("------------------------------------------------------------------------------------------------");
-            System.out.println("En este juego vas a ser un heroe que busca salvar su aldea de unos malvados monstruos: \r\n" + //
+            System.out.println("En este juego vas a ser un heroe que busca tomar venganza de su aldea que fue destruida por unos monstruos \r\n" + //
                                 "Monstruo 1: El Goblin\r\n" + //
                                 "    Este sujeto tiene 40 de vida y quita 10 de vida por cada golpe que da\r\n" + //
                                 "Monstruo 2: El Esqueleto\r\n" + //
-                                "    Este sujeto tiene 60 de vida y quita 20 de vida por cada golpe que da\r\n" + //
+                                "    Este sujeto tiene 60 de vida y quita 25 de vida por cada golpe que da\r\n" + //
                                 "Monstruo 3: El Leviatán\r\n" + //
-                                "    Este sujeto tiene 80 de vida y quita 15 de vida por cada golpe\r\n" + //
+                                "    Este sujeto tiene 80 de vida y quita 18 de vida por cada golpe\r\n" + //
                                 "\r\n" + //
                                 "Tu heroe tiene 2 pociones normales que curan 25 de vida cada una y 1 super pocion que cura 50.\r\n" + //
                                 "Puedes elegir entre 2 armas, espada larga, que quita de 15 a 25 de vida y espada corta que quita 10 a 15 de vida\r\n" + //
@@ -164,21 +165,19 @@ public class maingame {
                                 
                             }else{
                                 System.out.println("-----------------------------------------");
-                                System.out.println("El Goblin te golpea y te quita 10 de vida");
+                                System.out.println("El Goblin te golpea y te quita " + goblin.getDamage() + " de vida");
                                 hero.setHealth(hero.getHealth() - goblin.getDamage());
-                            }
-                            
-                            
+                                if(hero.getHealth() <= 0){
+                                    System.out.println("Has Muerto");
+                                    System.out.println("Saliendo del juego en 5s");
+                                    Thread.sleep(5000);
+                                    return;
+                                }else{
+                                    System.out.println("--------------------------------------------------");
+                                    System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");
 
-                            
-                            if(hero.getHealth() <= 0){
-                                System.out.println("Has Muerto");
-                                System.out.println("Saliendo del juego en 5s");
-                                Thread.sleep(5000);
-                                return;
-                            }else{
-                            System.out.println("--------------------------------------------------");
-                            System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
+                                }
+                            }
                             break;
                         case 2: //porque el enemigo te pegaria si te estas echando una pocion, no me gusta, al igual que si quieres meterte una pocion aunque sepas que no te va a curar, porque no puedes hacerlo?
                             System.out.println("------------------------");
@@ -256,7 +255,7 @@ public class maingame {
                     boolean battlemenu = true;
 
                     while(battlemenu == true){
-                        System.out.println("----------------------");
+                        System.out.println("------------------------");
                         System.out.println("Que quieres hacer ahora?");
 
                         System.out.println("1. Atacar");
@@ -293,19 +292,19 @@ public class maingame {
                                 battlemenu = false;
                             }else{
                                 System.out.println("------------------------------------------------");
-                                System.out.println("El Rey Esqueleto te golpea y te quita 20 de vida");
+                                System.out.println("El Rey Esqueleto te golpea y te quita " + skeleton.getDamage() + " de vida");
                                 hero.setHealth(hero.getHealth() - skeleton.getDamage());
+                                if(hero.getHealth() <= 0){
+                                    System.out.println("Has Muerto");
+                                    System.out.println("Saliendo del juego en 5s");
+                                    Thread.sleep(5000);
+                                    return;
+                                }else{
+                                    System.out.println("--------------------------------------------------");
+                                    System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");
+                                    
+                                }
                             }
-
-
-                            if(hero.getHealth() <= 0){
-                                System.out.println("Has Muerto");
-                                System.out.println("Saliendo del juego en 5s");
-                                Thread.sleep(5000);
-                                return;
-                            }else{
-                            System.out.println("--------------------------------------------------");
-                            System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
                             break;
 
                         case 2:
@@ -422,20 +421,19 @@ public class maingame {
                                 leviathanfight = false;
                                 battlemenu = false;
                             }else{
-                            System.out.println("-------------------------------------------");
-                            System.out.println("El Leviatan te golpea y te quita 15 de vida");
-                            hero.setHealth(hero.getHealth() - leviathan.getDamage());
+                                System.out.println("-------------------------------------------");
+                                System.out.println("El Leviatan te golpea y te quita " + leviathan.getDamage() + " de vida");
+                                hero.setHealth(hero.getHealth() - leviathan.getDamage());
+                                if(hero.getHealth() <= 0){
+                                    System.out.println("Has Muerto");
+                                    System.out.println("Saliendo del juego en 5s");
+                                    Thread.sleep(5000);
+                                    return;
+                                }else{
+                                    System.out.println("--------------------------------------------------");
+                                    System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");
+                                }
                             }
-
-
-                            if(hero.getHealth() <= 0){
-                                System.out.println("Has Muerto");
-                                System.out.println("Saliendo del juego en 5s");
-                                Thread.sleep(5000);
-                                return;
-                            }else{
-                            System.out.println("--------------------------------------------------");
-                            System.out.println("Te quedan " + hero.getHealth() + " Puntos de vida.");}
                             break;
 
                         case 2:
@@ -501,13 +499,18 @@ public class maingame {
 
             if(goblin.getHealth() <= 0 && skeleton.getHealth() <= 0 && leviathan.getHealth() <= 0){
                 puntos = puntos + hero.getHealth();
+                System.out.println("--------------------------------");
                 System.out.println("HAS VENCIDO A TODOS TUS ENEMIGOS");
-                System.out.println("Gracias por jugar :D");
+                System.out.println("--------------------------------");
+                System.out.println("Gracias por Jugar :D");
+                System.out.println("--------------------");
                 System.out.println("Puntuacion: " + puntos);
+                System.out.println("------------");
                 //rollout credits
                 
                 System.out.println("1. Volver al menu");
                 System.out.println("2. Salir");
+                System.out.println("3. Ver Creditos");
                 int menufinal = readInt(sc);
                 switch(menufinal){
                     case 1:
@@ -516,6 +519,15 @@ public class maingame {
                         break;
                     case 2:
                         return;
+                    case 3:
+                        System.out.println("Esto es un proyecto de clase");
+                        System.out.println("Desarollador: Nicobra19");
+                        System.out.println("Gracias por Jugar :)");
+                        break;
+                    default:
+                        game = false;
+                        mainmenu = true;
+                        break;
                 }
             }
 
@@ -527,10 +539,6 @@ public class maingame {
 
     private static int readInt(Scanner sc) {
         while (!sc.hasNextInt()) {
-            if (!sc.hasNext()) {
-                System.out.println("No hay más entrada. Saliendo del juego.");
-                System.exit(0);
-            }
             System.out.println("Introduce un numero valido");
             sc.next();
         }

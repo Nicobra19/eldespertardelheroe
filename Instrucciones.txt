@@ -1,4 +1,4 @@
-En este juego vas a ser un heroe que busca salvar su aldea de unos malvados monstruos: 
+En este juego vas a ser un heroe que busca tomar venganza de su aldea que fue destruida por unos monstruos: 
 Monstruo 1: El Goblin
     Este sujeto tiene 40 de vida y quita 10 de vida por cada golpe que da
 Monstruo 2: El Esqueleto
