@@ -482,7 +482,7 @@ public class maingame {
                             System.out.println("DATOS DEL HEROE: "); hero.showcharacterdata();
                             System.out.println("Super Pociones: " + superPotion.getCount()); 
                             System.out.println("Pociones Normales: " + normalPotion.getCount());
-                            System.out.println("Puntos: " + 600);
+                            System.out.println("Puntos: " + puntos);
                             System.out.println("-----------------");
                             System.out.println("DATOS DEL ENEMIGO: "); leviathan.showcharacterdata();
                             continue;
@@ -531,7 +531,7 @@ public class maingame {
                 System.out.println("No hay más entrada. Saliendo del juego.");
                 System.exit(0);
             }
-            System.out.println("Introduce un número válido.");
+            System.out.println("Introduce un numero valido");
             sc.next();
         }
         return sc.nextInt();
