@@ -141,7 +141,7 @@ public class maingame {
                                 hero.setDamage(longsword.getDamageamount());
                                 goblin.setHealth(goblin.getHealth() - hero.getDamage());
                                 System.out.println("----------------------");
-                                System.out.println("Le has hecho " + longdamage + " de daño");
+                                System.out.println("Le has hecho " + longdamage + " de daño" + "( " + goblin.getHealth() + " de vida restante" + ")");
 
                             }  
                             
@@ -149,7 +149,7 @@ public class maingame {
                                 hero.setDamage(shortsword.getDamageamount());
                                 System.out.println("----------------------");
                                 goblin.setHealth(goblin.getHealth() - hero.getDamage());
-                                System.out.println("Le has hecho " + shortdamage + " de daño");
+                                System.out.println("Le has hecho " + shortdamage + " de daño" + "( " + goblin.getHealth() + " de vida restante" + ")");
 
                             }else{
                                 System.out.println("---------");
@@ -272,13 +272,13 @@ public class maingame {
                             if(espadadecision == 1){
                                 hero.setDamage(longsword.getDamageamount());
                                 skeleton.setHealth(skeleton.getHealth() - hero.getDamage());
-                                System.out.println("Le has hecho " + longdamage + " de daño");
+                                System.out.println("Le has hecho " + longdamage + " de daño" + "( " + skeleton.getHealth() + " de vida restante" + ")");
 
                             }
                             else if(espadadecision == 2){
                                 hero.setDamage(shortsword.getDamageamount());
                                 skeleton.setHealth(skeleton.getHealth() - hero.getDamage());
-                                System.out.println("Le has hecho " + shortdamage + " de daño");
+                                System.out.println("Le has hecho " + shortdamage + " de daño" + "( " + skeleton.getHealth() + " de vida restante" + ")");
 
                             }else{
                                 System.out.println("---------");
@@ -401,13 +401,13 @@ public class maingame {
                             if(espadadecision == 1){
                                 hero.setDamage(longsword.getDamageamount());
                                 leviathan.setHealth(leviathan.getHealth() - hero.getDamage());
-                                System.out.println("Le has hecho " + longdamage + " de daño");
+                                System.out.println("Le has hecho " + longdamage + " de daño" + "( " + leviathan.getHealth() + " de vida restante" + ")");
 
                             }
                             else if(espadadecision == 2){
                                 hero.setDamage(shortsword.getDamageamount());
                                 leviathan.setHealth(leviathan.getHealth() - hero.getDamage());
-                                System.out.println("Le has hecho " + shortdamage + " de daño");
+                                System.out.println("Le has hecho " + shortdamage + " de daño" + "( " + leviathan.getHealth() + " de vida restante" + ")");
 
                             }else{
                                 System.out.println("---------");
