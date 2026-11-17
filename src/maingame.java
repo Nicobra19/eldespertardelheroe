@@ -1,9 +1,14 @@
+import java.io.IOException;
 import java.util.Scanner;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 
 
 public class maingame {
     public static void main (String[] args) throws InterruptedException{
         Scanner sc = new Scanner(System.in);
+        RankingXML ranking = new RankingXML("ranking.xml");
+        ranking.cargar();
         
         while(true){
         boolean mainmenu = true;
@@ -29,7 +34,7 @@ public class maingame {
             mainmenu = false;
             break;
         case 2:
-            //fetch xml with data from past games and if there are no past games say 'theres no past games'
+            ranking.mostrarRanking();
             break;
         case 3:
             System.out.println("------------------------------------------------------------------------------------------------");
@@ -65,7 +70,8 @@ public class maingame {
 
         System.out.println("----------------------");
         System.out.println("Escribe tu nombre: ");
-        String name = sc.next();
+        sc.nextLine();
+        String name = readName(sc);
 
         Hero hero = new Hero(name, 100, 5);
         LongSword longsword = new LongSword(longdamage);
@@ -96,6 +102,7 @@ public class maingame {
                     break;
 
                 case 3:
+                    registrarPuntuacion(ranking, name, puntos);
                     return;
 
                 default:
@@ -169,6 +176,7 @@ public class maingame {
                                 hero.setHealth(hero.getHealth() - goblin.getDamage());
                                 if(hero.getHealth() <= 0){
                                     System.out.println("Has Muerto");
+                                    registrarPuntuacion(ranking, name, puntos);
                                     System.out.println("Saliendo del juego en 5s");
                                     Thread.sleep(5000);
                                     return;
@@ -296,6 +304,7 @@ public class maingame {
                                 hero.setHealth(hero.getHealth() - skeleton.getDamage());
                                 if(hero.getHealth() <= 0){
                                     System.out.println("Has Muerto");
+                                    registrarPuntuacion(ranking, name, puntos);
                                     System.out.println("Saliendo del juego en 5s");
                                     Thread.sleep(5000);
                                     return;
@@ -426,6 +435,7 @@ public class maingame {
                                 hero.setHealth(hero.getHealth() - leviathan.getDamage());
                                 if(hero.getHealth() <= 0){
                                     System.out.println("Has Muerto");
+                                    registrarPuntuacion(ranking, name, puntos);
                                     System.out.println("Saliendo del juego en 5s");
                                     Thread.sleep(5000);
                                     return;
@@ -504,6 +514,7 @@ public class maingame {
                 System.out.println("--------------------------------");
                 System.out.println("Gracias por Jugar :D");
                 System.out.println("--------------------");
+                registrarPuntuacion(ranking, name, puntos);
                 System.out.println("Puntuacion: " + puntos);
                 System.out.println("------------");
                 //rollout credits
@@ -512,8 +523,10 @@ public class maingame {
                 System.out.println("2. Salir");
                 System.out.println("3. Ver Creditos");
                 int menufinal = readInt(sc);
+                game = false;
                 switch(menufinal){
                     case 1:
+                        //
                         game = false;
                         mainmenu = true;
                         break;
@@ -543,5 +556,30 @@ public class maingame {
             sc.next();
         }
         return sc.nextInt();
+    }
+
+    private static String readName(Scanner sc) {
+        while (true) {
+            String name = sc.nextLine().trim();
+            if (!name.isEmpty()) {
+                return name;
+            }
+            System.out.println("El nombre no puede estar vacio. Escribe tu nombre:");
+        }
+    }
+
+    private static void registrarPuntuacion(RankingXML ranking, String name, int puntos) {
+        if (!ranking.estaDisponible()) {
+            return;
+        }
+        try {
+            if (ranking.registrarPuntuacion(name, puntos)) {
+                System.out.println("Puntuacion guardada en el ranking XML.");
+            } else {
+                System.out.println("La puntuacion no entra en el top 10.");
+            }
+        } catch (IOException | ParserConfigurationException | TransformerException | IllegalArgumentException e) {
+            System.err.println("No se pudo guardar la puntuacion: " + e.getMessage());
+        }
     }
 }

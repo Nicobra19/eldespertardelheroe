@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ranking SYSTEM "../ranking.dtd">
+<ranking>
+    <registro>
+        <nombre>Eva</nombre>
+        <puntuacion>180</puntuacion>
+        <nivel>1</nivel>
+    </registro>
+</ranking>

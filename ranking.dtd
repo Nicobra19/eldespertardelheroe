@@ -1,0 +1,4 @@
+<!ELEMENT ranking (registro*)>
+<!ELEMENT registro (nombre, puntuacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT puntuacion (#PCDATA)>

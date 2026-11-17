@@ -1,0 +1,26 @@
+Consultas XPath sobre ranking.xml
+===============================
+
+1. Seleccionar todos los nombres de jugadores:
+   /ranking/registro/nombre
+   Resultado de ejemplo: test1, test2, test3, test4, test5.
+
+2. Seleccionar registros con 300 puntos o mas:
+   /ranking/registro[number(puntuacion) >= 300]
+   Resultado de ejemplo: test1 (380), test2 (330).
+
+3. Buscar el registro de un jugador concreto:
+   /ranking/registro[nombre = 'test3']
+   Resultado de ejemplo: test3 (280).
+
+4. Combinar el filtro por nombre y puntuacion:
+   /ranking/registro[nombre = 'test4' and number(puntuacion) >= 200]
+   Resultado de ejemplo: test4 (230).
+
+5. Contar los registros con puntuacion:
+   count(/ranking/registro[puntuacion])
+   Resultado de ejemplo: 5.
+
+Las puntuaciones y los resultados corresponden al ranking.xml inicial. El orden
+de aparicion en XML desempata puntuaciones iguales: el registro mas antiguo
+permanece primero.
