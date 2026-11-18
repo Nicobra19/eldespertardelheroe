@@ -1,0 +1,29 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+2
+---------------- RANKING ----------------
+1. test1 - 380 puntos
+2. test2 - 330 puntos
+3. test3 - 280 puntos
+4. test4 - 230 puntos
+5. test5 - 230 puntos
+6. test6 - 95 puntos
+7. Ana & <Bob> - 0 puntos
+-----------------------------------------
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+4

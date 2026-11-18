@@ -1,0 +1,21 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+2
+Todavia no hay puntuaciones guardadas.
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+4

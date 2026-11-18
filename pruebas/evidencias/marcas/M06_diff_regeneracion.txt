@@ -1,0 +1,33 @@
+$ diff web/ranking.html pruebas/evidencias/marcas/M06_ranking_modificado.html
+18a19,23
+> <td>test6</td>
+> <td>400</td>
+> </tr>
+> <tr>
+> <td>2.</td>
+23c28
+< <td>2.</td>
+---
+> <td>3.</td>
+28c33
+< <td>3.</td>
+---
+> <td>4.</td>
+33c38
+< <td>4.</td>
+---
+> <td>5.</td>
+38c43
+< <td>5.</td>
+---
+> <td>6.</td>
+43c48
+< <td>6.</td>
+---
+> <td>7.</td>
+46,50d50
+< </tr>
+< <tr>
+< <td>7.</td>
+< <td>test6</td>
+< <td>95</td>

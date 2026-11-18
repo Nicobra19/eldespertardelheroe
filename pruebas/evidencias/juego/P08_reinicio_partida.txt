@@ -1,0 +1,291 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+Rita Prueba
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+1
+---------------------------------------------------------------
+Estas andando por una cueva en busca de quien destruyo tu aldea
+Escuchas unas piedras moverse detras de ti...
+Aparece tu primer enemigo, El Goblin.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+1
+----------------------
+Le has hecho 18 de daño( 22 de vida restante)
+-----------------------------------------
+El Goblin te golpea y te quita 10 de vida
+--------------------------------------------------
+Te quedan 90 Puntos de vida.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+1
+----------------------
+Le has hecho 18 de daño( 4 de vida restante)
+-----------------------------------------
+El Goblin te golpea y te quita 10 de vida
+--------------------------------------------------
+Te quedan 80 Puntos de vida.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+1
+----------------------
+Le has hecho 18 de daño( 0 de vida restante)
+Despues de vencer al goblin, decides seguir el camino.
+Te encuentras con un cementerio
+Aparece tu segundo enemigo, El Rey Esqueleto
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 42 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 55 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 24 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 30 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+2
+------------------------
+Que pocion quieres usar?
+1. Super pocion 2. Pocion Normal
+1
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 6 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 55 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 0 de vida restante)
+Despues de vencer al goblin y al rey esqueleto decides seguir el camino.
+Ahora mismo te encuentras surcando los mares en busca de tu ultimo enemigo
+Aparece tu ultimo enemigo, El Leviatan
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 62 de vida restante)
+-------------------------------------------
+El Leviatan te golpea y te quita 18 de vida
+--------------------------------------------------
+Te quedan 37 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 44 de vida restante)
+-------------------------------------------
+El Leviatan te golpea y te quita 18 de vida
+--------------------------------------------------
+Te quedan 19 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+2
+------------------------
+Que pocion quieres usar?
+1. Super pocion 2. Pocion Normal
+2
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 26 de vida restante)
+-------------------------------------------
+El Leviatan te golpea y te quita 18 de vida
+--------------------------------------------------
+Te quedan 26 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+2
+------------------------
+Que pocion quieres usar?
+1. Super pocion 2. Pocion Normal
+2
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 8 de vida restante)
+-------------------------------------------
+El Leviatan te golpea y te quita 18 de vida
+--------------------------------------------------
+Te quedan 33 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+1
+Le has hecho 18 de daño( 0 de vida restante)
+--------------------------------
+HAS VENCIDO A TODOS TUS ENEMIGOS
+--------------------------------
+Gracias por Jugar :D
+--------------------
+Puntuacion guardada en el ranking XML.
+Puntuacion: 333
+------------
+1. Volver al menu
+2. Salir
+3. Ver Creditos
+1
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+Rita Segunda
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+1
+---------------------------------------------------------------
+Estas andando por una cueva en busca de quien destruyo tu aldea
+Escuchas unas piedras moverse detras de ti...
+Aparece tu primer enemigo, El Goblin.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+3
+-----------------
+DATOS DEL HEROE: 
+Nombre: Rita Segunda
+Vida: 100
+Daño: 5
+Super Pociones: 1
+Pociones Normales: 2
+Puntos: 0
+-----------------
+DATOS DEL ENEMIGO: 
+Nombre: El Goblin
+Vida: 40
+Daño: 10
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+^C

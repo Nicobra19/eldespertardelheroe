@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="ranking.xsl"?><!DOCTYPE ranking SYSTEM "ranking.dtd">
+<ranking>
+    <registro>
+        <nombre>test1</nombre>
+        <puntuacion>380</puntuacion>
+    </registro>
+    <registro>
+        <nombre>test2</nombre>
+        <puntuacion>330</puntuacion>
+    </registro>
+    <registro>
+        <nombre>test3</nombre>
+        <puntuacion>280</puntuacion>
+    </registro>
+    <registro>
+        <nombre>test4</nombre>
+        <puntuacion>230</puntuacion>
+    </registro>
+    <registro>
+        <nombre>test5</nombre>
+        <puntuacion>230</puntuacion>
+    </registro>
+    <registro>
+        <nombre>test6</nombre>
+        <puntuacion>95</puntuacion>
+    </registro>
+    <registro>
+        <nombre>Eva Prueba</nombre>
+        <puntuacion>0</puntuacion>
+    </registro>
+</ranking>

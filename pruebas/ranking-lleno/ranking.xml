@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ranking SYSTEM "ranking.dtd">
+<ranking>
+    <registro>
+        <nombre>lleno1</nombre>
+        <puntuacion>500</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno2</nombre>
+        <puntuacion>450</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno3</nombre>
+        <puntuacion>400</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno4</nombre>
+        <puntuacion>350</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno5</nombre>
+        <puntuacion>300</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno6</nombre>
+        <puntuacion>250</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno7</nombre>
+        <puntuacion>200</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno8</nombre>
+        <puntuacion>150</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno9</nombre>
+        <puntuacion>100</puntuacion>
+    </registro>
+    <registro>
+        <nombre>lleno10</nombre>
+        <puntuacion>0</puntuacion>
+    </registro>
+</ranking>

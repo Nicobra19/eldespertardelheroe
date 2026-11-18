@@ -1,0 +1,47 @@
+$ git status --short --ignored   (bin/ compilado, src/Hero.class y .vscode/settings.json creados a proposito)
+?? .gitignore
+?? .vscode/tasks.json
+?? LICENSE
+?? README.md
+?? marcas/xpath-consultas.md
+?? ranking.dtd
+?? ranking.xml
+?? src/Character.java
+?? src/Goblin.java
+?? src/Hero.java
+?? src/Leviathan.java
+?? src/LongSword.java
+?? src/NormalPotion.java
+?? src/Potion.java
+?? src/RankingXML.java
+?? src/ShortSword.java
+?? src/Skeleton.java
+?? src/SuperPotion.java
+?? src/Weapon.java
+?? src/maingame.java
+?? web/ranking.css
+?? web/ranking.html
+?? web/ranking.xsl
+!! .vscode/settings.json
+!! bin/Character.class
+!! bin/Goblin.class
+!! bin/Hero.class
+!! bin/Leviathan.class
+!! bin/LongSword.class
+!! bin/NormalPotion.class
+!! bin/Potion.class
+!! bin/RankingXML$1.class
+!! bin/RankingXML.class
+!! bin/ShortSword.class
+!! bin/Skeleton.class
+!! bin/SuperPotion.class
+!! bin/Weapon.class
+!! bin/maingame.class
+!! src/Hero.class
+
+$ git check-ignore -v bin/maingame.class src/Hero.class .vscode/settings.json .vscode/tasks.json src/maingame.java ranking.xml
+.gitignore:3:bin/	bin/maingame.class
+.gitignore:2:*.class	src/Hero.class
+.gitignore:8:.vscode/*	.vscode/settings.json
+.gitignore:9:!.vscode/tasks.json	.vscode/tasks.json
+(src/maingame.java y ranking.xml no aparecen: no se ignoran. .vscode/tasks.json aparece con la regla de excepcion !.vscode/tasks.json: tampoco se ignora, se comparte porque define la tarea XSLT de VS Code)

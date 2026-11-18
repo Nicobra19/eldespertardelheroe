@@ -1,0 +1,8 @@
+$ xmllint --noout --valid pruebas/xml-errores/ranking-elemento-no-permitido.xml
+pruebas/xml-errores/ranking-elemento-no-permitido.xml:7: element nivel: validity error : No declaration for element nivel
+        <nivel>1</nivel>
+                        ^
+pruebas/xml-errores/ranking-elemento-no-permitido.xml:8: element registro: validity error : Element registro content does not follow the DTD, expecting (nombre , puntuacion), got (nombre puntuacion nivel )
+    </registro>
+               ^
+codigo de salida: 4

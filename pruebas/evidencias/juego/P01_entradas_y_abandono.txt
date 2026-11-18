@@ -1,0 +1,45 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+abc
+Introduce un numero valido
+9
+No valido
+---------
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+
+El nombre no puede estar vacio. Escribe tu nombre:
+    
+El nombre no puede estar vacio. Escribe tu nombre:
+Eva Prueba
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+7
+---------
+No valido
+---------
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+3
+Puntuacion guardada en el ranking XML.

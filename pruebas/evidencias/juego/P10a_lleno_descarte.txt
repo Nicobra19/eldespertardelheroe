@@ -1,0 +1,21 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+Descartado
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+3
+La puntuacion no entra en el top 10.
+
+[comprobacion] sha256 antes=adaa84e9d894 despues=adaa84e9d894

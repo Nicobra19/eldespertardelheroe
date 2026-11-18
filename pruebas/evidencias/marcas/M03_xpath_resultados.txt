@@ -1,0 +1,36 @@
+Consulta 1
+$ xmllint --xpath "/ranking/registro/nombre/text()" ranking.xml
+test1
+pcc
+test2
+test3
+test4
+test5
+test6
+
+
+Consulta 2
+$ xmllint --xpath "/ranking/registro[number(puntuacion) > 250]/nombre/text()" ranking.xml
+test1
+pcc
+test2
+test3
+
+
+Consulta 3
+$ xmllint --xpath "/ranking/registro[nombre = 'test5']/puntuacion/text()" ranking.xml
+230
+
+
+Consulta 4
+$ xmllint --xpath "/ranking/registro[number(puntuacion) >= 100 and number(puntuacion) < 300]/nombre/text()" ranking.xml
+test3
+test4
+test5
+
+
+Consulta 5
+$ xmllint --xpath "count(/ranking/registro[number(puntuacion) = 230])" ranking.xml
+2
+
+

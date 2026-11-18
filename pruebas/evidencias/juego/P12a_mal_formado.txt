@@ -1,0 +1,33 @@
+No se pudo leer ranking.xml: XML document structures must start and end within the same entity.
+El archivo se conserva sin cambios; corrige el XML para volver a usar el ranking.
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+2
+Ranking no disponible: corrige ranking.xml antes de volver a consultarlo.
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+Intento
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+3
+
+[comprobacion] sha256 antes=0247844dddc7 despues=0247844dddc7

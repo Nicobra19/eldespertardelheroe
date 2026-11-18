@@ -1,0 +1,133 @@
+----------------------
+EL DESPERTAR DEL HEROE
+----------------------
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+----------------------
+Que Deseas Hacer?: 
+1
+----------------------
+Escribe tu nombre: 
+Dario Prueba
+-------------------------------------
+Te encuentras descansando ahora mismo
+-------------------------------------
+1. Comenzar 2. Seguir descansando 3. Salir
+1
+---------------------------------------------------------------
+Estas andando por una cueva en busca de quien destruyo tu aldea
+Escuchas unas piedras moverse detras de ti...
+Aparece tu primer enemigo, El Goblin.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+2
+----------------------
+Le has hecho 14 de daño( 26 de vida restante)
+-----------------------------------------
+El Goblin te golpea y te quita 10 de vida
+--------------------------------------------------
+Te quedan 90 Puntos de vida.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+2
+----------------------
+Le has hecho 14 de daño( 12 de vida restante)
+-----------------------------------------
+El Goblin te golpea y te quita 10 de vida
+--------------------------------------------------
+Te quedan 80 Puntos de vida.
+----------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+----------------------
+Con que espada?
+------------------------------------
+1. Espada Larga 2. Espada Corta
+2
+----------------------
+Le has hecho 14 de daño( 0 de vida restante)
+Despues de vencer al goblin, decides seguir el camino.
+Te encuentras con un cementerio
+Aparece tu segundo enemigo, El Rey Esqueleto
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+2
+Le has hecho 14 de daño( 46 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 55 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+2
+Le has hecho 14 de daño( 32 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 30 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+2
+Le has hecho 14 de daño( 18 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+--------------------------------------------------
+Te quedan 5 Puntos de vida.
+------------------------
+Que quieres hacer ahora?
+1. Atacar
+2. Curarse
+3. Ver Stats
+1
+---------------
+Con que espada?
+1. Espada Larga 2. Espada Corta
+2
+Le has hecho 14 de daño( 4 de vida restante)
+------------------------------------------------
+El Rey Esqueleto te golpea y te quita 25 de vida
+Has Muerto
+Puntuacion guardada en el ranking XML.
+Saliendo del juego en 5s

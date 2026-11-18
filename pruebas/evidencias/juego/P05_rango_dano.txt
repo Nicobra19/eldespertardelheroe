@@ -1,0 +1,3 @@
+Danos observados en 6 partidas reales (espada larga 15-25, espada corta 10-15)
+larga: valores distintos=[23, 24, 25] min=23 max=25 golpes=21
+corta: valores distintos=[10, 11, 14] min=10 max=14 golpes=10

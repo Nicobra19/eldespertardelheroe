@@ -1,0 +1,46 @@
+Reproduccion: proyecto copiado en /tmp/repro (carpeta distinta a la de trabajo), comandos del README:
+
+$ javac -encoding UTF-8 -d bin src/*.java
+$ ls bin
+Character.class
+Goblin.class
+Hero.class
+Leviathan.class
+LongSword.class
+NormalPotion.class
+Potion.class
+RankingXML$1.class
+RankingXML.class
+ShortSword.class
+Skeleton.class
+SuperPotion.class
+Weapon.class
+maingame.class
+$ printf '2\n4\n' | java -cp bin maingame
+EL DESPERTAR DEL HEROE
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+Que Deseas Hacer?: 
+---------------- RANKING ----------------
+1. test1 - 380 puntos
+2. pcc - 336 puntos
+3. test2 - 330 puntos
+4. test3 - 280 puntos
+5. test4 - 230 puntos
+6. test5 - 230 puntos
+7. test6 - 95 puntos
+EL DESPERTAR DEL HEROE
+1. Nueva Partida
+2. Consultar ranking
+3. Ayuda
+4. Salir
+Que Deseas Hacer?: 
+$ xmllint --noout --valid ranking.xml && echo VALIDO
+VALIDO
+$ xmllint --xpath "count(/ranking/registro[number(puntuacion) = 230])" ranking.xml
+2
+
+$ xsltproc -o web/ranking.html web/ranking.xsl ranking.xml && grep -c '<tr>' web/ranking.html
+8

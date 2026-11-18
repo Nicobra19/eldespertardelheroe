@@ -1,0 +1,2 @@
+$ xmllint --noout --valid ranking.xml
+codigo de salida: 0
